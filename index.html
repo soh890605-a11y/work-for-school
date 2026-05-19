@@ -5,51 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>솧의 교행노트</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      background: #f4f4f4;
-    }
+<style>
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f7f6f3;
+    color: #37352f;
+  }
 
-    header {
-      background: #2563eb;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      font-size: 28px;
-      font-weight: bold;
-    }
+  header {
+    background: #ffffff;
+    color: #37352f;
+    padding: 32px 24px 12px;
+    font-size: 34px;
+    font-weight: 700;
+    border-bottom: 1px solid #e9e5dc;
+  }
 
-    .container {
-      padding: 30px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
+  header::after {
+    content: "업무에 필요한 도구를 한 곳에 모아두는 개인 업무노트";
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #787774;
+  }
 
-    .card {
-      background: white;
-      border-radius: 16px;
-      padding: 24px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: 0.2s;
-      cursor: pointer;
-    }
+  .container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 36px 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 14px;
+  }
 
-    .card:hover {
-      transform: translateY(-5px);
-    }
+  .card {
+    background: #ffffff;
+    border: 1px solid #e9e5dc;
+    border-radius: 10px;
+    padding: 22px;
+    box-shadow: none;
+    transition: 0.15s ease;
+    cursor: pointer;
+  }
 
-    .card h2 {
-      margin-top: 0;
-      color: #2563eb;
-    }
+  .card:hover {
+    background: #f1f1ef;
+    transform: none;
+  }
 
-    .card p {
-      color: #555;
-    }
-  </style>
+  .card h2 {
+    margin: 0 0 10px;
+    color: #37352f;
+    font-size: 19px;
+    font-weight: 600;
+  }
+
+  .card p {
+    margin: 0;
+    color: #787774;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+</style>
 </head>
 
 <body>
